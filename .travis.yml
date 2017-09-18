@@ -16,5 +16,4 @@ script:
   - rake clean
   - rake rust
   - rake specinfra
-  - rake compile
   - rake test

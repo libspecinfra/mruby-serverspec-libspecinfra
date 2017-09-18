@@ -35,9 +35,10 @@ task :compile => :mruby do
 end
 
 desc "test"
-task :test => :mruby do
+task :test => :compile do
   res = `mruby/bin/mruby spec/file_spec.rb`
-  if res.include?("F")
+  puts res
+  if res.include?("F") || res.include?("X")
     exit 1
   end
 end
