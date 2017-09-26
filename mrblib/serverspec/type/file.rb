@@ -7,5 +7,9 @@ module Serverspec::Type
     def mode
       @file.mode
     end
+
+    def file?
+      @file.is_file()
+    end
   end
 end
