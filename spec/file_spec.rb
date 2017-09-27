@@ -24,3 +24,7 @@ end
 describe file('/etc/passwd') do
   it { should_not be_character_device }
 end
+
+describe file('/etc/passwd') do
+  it { should_not be_pipe }
+end

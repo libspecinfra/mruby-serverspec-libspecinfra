@@ -27,5 +27,9 @@ module Serverspec::Type
     def character_device?
       @file.is_character_device()
     end
+
+    def pipe?
+      @file.is_pipe()
+    end
   end
 end
