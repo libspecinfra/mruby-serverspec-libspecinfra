@@ -11,5 +11,9 @@ module Serverspec::Type
     def file?
       @file.is_file()
     end
+
+    def directory?
+      @file.is_directory()
+    end
   end
 end

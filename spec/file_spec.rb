@@ -5,3 +5,7 @@ end
 describe file('/etc/passwd') do
   it { should be_file }
 end
+
+describe file('/etc/passwd') do
+  it { should_not be_directory }
+end
