@@ -23,5 +23,9 @@ module Serverspec::Type
     def block_device?
       @file.is_block_device()
     end
+
+    def character_device?
+      @file.is_character_device()
+    end
   end
 end

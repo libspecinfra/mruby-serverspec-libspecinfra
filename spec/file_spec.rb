@@ -20,3 +20,7 @@ end
 describe file('/etc/passwd') do
   it { should_not be_block_device }
 end
+
+describe file('/etc/passwd') do
+  it { should_not be_character_device }
+end
