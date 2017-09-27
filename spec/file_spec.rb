@@ -76,3 +76,7 @@ end
 describe file('/etc/passwd') do
   it { should be_writable }
 end
+
+describe file('/etc/passwd') do
+  it { should be_writable_by_owner }
+end
