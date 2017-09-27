@@ -15,5 +15,9 @@ module Serverspec::Type
     def directory?
       @file.is_directory()
     end
+
+    def exists?
+      @file.exist()
+    end
   end
 end
