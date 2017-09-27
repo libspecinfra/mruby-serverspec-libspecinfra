@@ -40,3 +40,7 @@ end
 describe file('/etc/passwd') do
   its(:contents) { should match /root/ }
 end
+
+describe file('/etc/passwd') do
+  its(:owner) { should eq 'root' }
+end

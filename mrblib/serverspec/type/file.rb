@@ -43,5 +43,15 @@ module Serverspec::Type
     def contents
       @file.contents()
     end
+
+    def owner
+      @file.owner()
+    end
   end
 end
+
+
+
+
+
+
