@@ -60,3 +60,7 @@ end
 describe file('/etc/passwd') do
   it { should be_readable_by_owner }
 end
+
+describe file('/etc/passwd') do
+  it { should be_readable_by_group }
+end
