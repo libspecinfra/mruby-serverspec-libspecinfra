@@ -35,5 +35,9 @@ module Serverspec::Type
     def socket?
       @file.is_socket()
     end
+
+    def symlink?
+      @file.is_symlink()
+    end
   end
 end

@@ -32,3 +32,7 @@ end
 describe file('/etc/passwd') do
   it { should_not be_socket }
 end
+
+describe file('/etc/passwd') do
+  it { should_not be_symlink }
+end
