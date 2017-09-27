@@ -63,5 +63,9 @@ module Serverspec::Type
     def readable_by_group?
       @file.is_readable_by_group()
     end
+
+    def readable_by_others?
+      @file.is_readable_by_others()
+    end
   end
 end
