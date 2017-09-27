@@ -100,3 +100,7 @@ end
 describe file('/etc/passwd') do
   its(:sha256sum) { should_not match /AAAAA/ }
 end
+
+describe file('/etc/passwd') do
+  its(:size) { should be >  0 }
+end

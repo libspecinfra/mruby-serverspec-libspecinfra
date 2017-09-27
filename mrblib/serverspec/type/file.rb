@@ -99,5 +99,15 @@ module Serverspec::Type
     def sha256sum
       @file.sha256sum()
     end
+
+    def size
+      @file.size()
+    end
   end
 end
+
+
+
+
+
+
