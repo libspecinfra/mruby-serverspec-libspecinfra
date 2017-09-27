@@ -68,3 +68,7 @@ end
 describe file('/etc/passwd') do
   it { should be_readable_by_others }
 end
+
+describe file('/etc/passwd') do
+  it { should be_readable_by_user('root') }
+end
