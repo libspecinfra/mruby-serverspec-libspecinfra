@@ -36,3 +36,7 @@ end
 describe file('/etc/passwd') do
   it { should_not be_symlink }
 end
+
+describe file('/etc/passwd') do
+  its(:contents) { should match /root/ }
+end

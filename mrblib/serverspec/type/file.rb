@@ -39,5 +39,9 @@ module Serverspec::Type
     def symlink?
       @file.is_symlink()
     end
+
+    def contents
+      @file.contents()
+    end
   end
 end
