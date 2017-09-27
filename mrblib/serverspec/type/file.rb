@@ -91,11 +91,9 @@ module Serverspec::Type
     def writable_by_user?(user)
       @file.is_writable_by_user(user)
     end
+
+    def md5sum
+      @file.md5sum()
+    end
   end
 end
-
-
-
-
-
-

@@ -93,11 +93,6 @@ describe file('/etc/passwd') do
   it { should be_writable_by_user('root') }
 end
 
-
-
-
-
-
-
-
-
+describe file('/etc/passwd') do
+  its(:md5sum) { should_not match /AAAAA/ }
+end
