@@ -71,5 +71,9 @@ module Serverspec::Type
     def readable_by_user?(user)
       @file.is_readable_by_user(user)
     end
+
+    def writable?
+      @file.is_writable()
+    end
   end
 end
