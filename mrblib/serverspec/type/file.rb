@@ -95,5 +95,9 @@ module Serverspec::Type
     def md5sum
       @file.md5sum()
     end
+
+    def sha256sum
+      @file.sha256sum()
+    end
   end
 end

@@ -96,3 +96,7 @@ end
 describe file('/etc/passwd') do
   its(:md5sum) { should_not match /AAAAA/ }
 end
+
+describe file('/etc/passwd') do
+  its(:sha256sum) { should_not match /AAAAA/ }
+end
