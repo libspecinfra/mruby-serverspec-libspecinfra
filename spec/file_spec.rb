@@ -104,3 +104,7 @@ end
 describe file('/etc/passwd') do
   its(:size) { should be >  0 }
 end
+
+describe file('/etc') do
+  it { should be_linked_to 'private/etc' }
+end

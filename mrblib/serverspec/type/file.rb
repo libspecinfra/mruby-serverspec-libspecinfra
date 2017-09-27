@@ -103,11 +103,9 @@ module Serverspec::Type
     def size
       @file.size()
     end
+
+    def linked_to?(link)
+      link == @file.linked_to()
+    end
   end
 end
-
-
-
-
-
-
