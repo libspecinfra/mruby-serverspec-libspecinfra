@@ -47,8 +47,13 @@ module Serverspec::Type
     def owner
       @file.owner()
     end
+
+    def group
+      @file.group()
+    end
   end
 end
+
 
 
 

@@ -44,3 +44,11 @@ end
 describe file('/etc/passwd') do
   its(:owner) { should eq 'root' }
 end
+
+=begin
+Diable this test because the group name of /etc/passwd differ
+depending on platforms
+describe file('/etc/passwd') do
+  its(:group) { should eq 'wheel' }
+end
+=end
