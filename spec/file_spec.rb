@@ -52,3 +52,7 @@ describe file('/etc/passwd') do
   its(:group) { should eq 'wheel' }
 end
 =end
+
+describe file('/etc/passwd') do
+  it { should be_readable }
+end

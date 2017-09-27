@@ -51,12 +51,9 @@ module Serverspec::Type
     def group
       @file.group()
     end
+
+    def readable?
+      @file.is_readable()
+    end
   end
 end
-
-
-
-
-
-
-
