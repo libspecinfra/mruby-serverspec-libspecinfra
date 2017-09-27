@@ -16,3 +16,7 @@ describe file('/etc/passwd') do
   it { should exist }
 end
 =end
+
+describe file('/etc/passwd') do
+  it { should_not be_block_device }
+end

@@ -19,5 +19,9 @@ module Serverspec::Type
     def exists?
       @file.exist()
     end
+
+    def block_device?
+      @file.is_block_device()
+    end
   end
 end
