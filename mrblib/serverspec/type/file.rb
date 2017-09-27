@@ -55,5 +55,9 @@ module Serverspec::Type
     def readable?
       @file.is_readable()
     end
+
+    def readable_by_owner?
+      @file.is_readable_by_owner()
+    end
   end
 end

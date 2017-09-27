@@ -56,3 +56,7 @@ end
 describe file('/etc/passwd') do
   it { should be_readable }
 end
+
+describe file('/etc/passwd') do
+  it { should be_readable_by_owner }
+end
