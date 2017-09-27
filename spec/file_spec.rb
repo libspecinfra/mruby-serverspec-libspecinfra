@@ -88,3 +88,16 @@ end
 describe file('/etc/passwd') do
   it { should_not be_writable_by_others }
 end
+
+describe file('/etc/passwd') do
+  it { should be_writable_by_user('root') }
+end
+
+
+
+
+
+
+
+
+

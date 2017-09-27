@@ -87,5 +87,15 @@ module Serverspec::Type
     def writable_by_others?
       @file.is_writable_by_others()
     end
+
+    def writable_by_user?(user)
+      @file.is_writable_by_user(user)
+    end
   end
 end
+
+
+
+
+
+
