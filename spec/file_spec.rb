@@ -105,6 +105,9 @@ describe file('/etc/passwd') do
   its(:size) { should be >  0 }
 end
 
+=begin
+Disable this test because this is valid only on macOS
 describe file('/etc') do
   it { should be_linked_to 'private/etc' }
 end
+=end
