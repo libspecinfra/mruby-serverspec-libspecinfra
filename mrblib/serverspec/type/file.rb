@@ -31,5 +31,9 @@ module Serverspec::Type
     def pipe?
       @file.is_pipe()
     end
+
+    def socket?
+      @file.is_socket()
+    end
   end
 end

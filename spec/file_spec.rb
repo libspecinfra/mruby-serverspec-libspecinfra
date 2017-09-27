@@ -28,3 +28,7 @@ end
 describe file('/etc/passwd') do
   it { should_not be_pipe }
 end
+
+describe file('/etc/passwd') do
+  it { should_not be_socket }
+end
