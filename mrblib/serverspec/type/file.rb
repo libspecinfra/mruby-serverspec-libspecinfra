@@ -79,5 +79,9 @@ module Serverspec::Type
     def writable_by_owner?
       @file.is_writable_by_owner()
     end
+
+    def writable_by_group?
+      @file.is_writable_by_group()
+    end
   end
 end
