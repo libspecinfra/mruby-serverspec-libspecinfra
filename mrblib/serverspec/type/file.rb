@@ -83,5 +83,9 @@ module Serverspec::Type
     def writable_by_group?
       @file.is_writable_by_group()
     end
+
+    def writable_by_others?
+      @file.is_writable_by_others()
+    end
   end
 end

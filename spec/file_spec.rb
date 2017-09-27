@@ -85,11 +85,6 @@ describe file('/etc/passwd') do
   it { should_not be_writable_by_group }
 end
 
-
-
-
-
-
-
-
-
+describe file('/etc/passwd') do
+  it { should_not be_writable_by_others }
+end
